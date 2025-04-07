@@ -1,0 +1,473 @@
+/*  rosa nav/footer: rgba(214, 121, 172, 0.911)
+    negro: negro
+    blanco: whitesmoke
+    rosita coral: rgba(234, 132, 132, 0.818)
+    titulo font: milonga
+    hover: rgb(87, 5, 45)
+    minimo pantalla: 300px
+*/
+/* para todas las páginas*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../imagenes/akina.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height:100vh;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+a:visited{
+    color: whitesmoke;
+}
+a:hover{
+    color:rgb(87, 5, 45);
+}
+
+
+/* NAVEGADOR */
+header{
+    background-color:rgba(214, 121, 172, 0.911) ;
+    margin-bottom: 40px;
+    font-size:20px;
+    width: 100%;
+    height: 75px;
+    position: sticky;
+    z-index: 9;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    vertical-align: middle;
+    margin: 0 10px;
+    text-align: center;
+}  
+
+nav ul li{
+    width: 10em ;
+    list-style: none;
+    margin-left: 15px;
+    justify-content:space-between;
+    /* border: 2px solid; */
+}
+
+h1{
+    width: 15em;
+    font-family: milonga;
+    align-content: center;
+    margin: 0 30px;
+    color: whitesmoke;
+
+    /* border: solid 2px; */
+}
+.navegador-carrito{
+    align-content: end;
+    /* border: 2px solid aquamarine; */
+    width:100px;
+}
+.navegador-carrito img{
+    width:40px ;
+    height: 40px;
+    
+}
+header, nav ul, .navegador-carrito{
+    display: flex;
+    height: 75px;
+    padding: 0%;
+    margin: 0%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* BODY */
+main{
+    margin-top: 40px;
+}
+/* INDEX */
+.mas-vendidas{
+    display: inline-block;
+    width: 100%;
+    padding: 0%;
+    margin-bottom: 0%;
+
+}
+.mas-vendidas h3,.mas-vendidas img{
+    width: 50%;
+    height: 350px;
+    margin-top: 25px;
+    margin-bottom: 32px;
+    vertical-align: middle;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(217, 217, 217,90%);
+    padding: 0%;
+}
+.mas-vendidas img{
+    opacity: 0.95;
+}
+.mas-vendidas h3{
+    font-size: 50px;
+    float: right;
+}
+.mas-vendidas h3:hover{
+    font-size: 60px;
+    font-style: italic;
+    display: inline-block;
+    background-color: rgb(217, 217, 217,90%);
+    margin-bottom: 32px;
+}
+.mas-vendidas a{
+    color: black;
+}
+.mas-vendidas a:hover{
+    color:rgb(87, 5, 45) ;
+}
+
+
+.tortas{
+    display: inline-block;
+    width: 100%;
+    margin-top: 0%;
+    padding: 0%;
+}
+.tortas h3,.tortas img{
+    width: 50%;
+    height: 350px;
+    margin-top: 2px;
+    margin-bottom: 32px;
+    vertical-align: middle;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(217, 217, 217,90%) ;
+    padding: 0%;
+}
+.tortas img{
+    opacity: 0.95;
+}
+.tortas h3{
+    font-size: 50px;
+    float: right;
+}
+.tortas h3:hover{
+    font-size: 60px;
+    font-style: italic;
+    display: inline-block;
+    background-color:  rgb(217, 217, 217,90%);
+    margin-bottom: 32px;
+    padding: 0%;
+}
+.tortas a{
+    color: black;
+}
+.tortas a:hover{
+    color:rgb(87, 5, 45) ;
+}
+
+
+.caterings{
+    display: inline-block;
+    width: 100%;
+    margin-top: 0%;
+    padding: 0%;
+}
+.caterings h3,.caterings img{
+    width: 50%;
+    height: 350px;
+    margin-top: 2px;
+    margin-bottom: 32px;
+    vertical-align: middle;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(217, 217, 217,90%) ;
+    padding: 0%;
+}
+.caterings img{
+    opacity: 0.95;
+}
+.caterings h3{
+    font-size: 50px;
+    float: left;
+}
+.caterings h3:hover{
+    font-size: 60px;
+    font-style: italic;
+    display: inline-block;
+    background-color:  rgb(217, 217, 217,90%);
+    padding: 0%;
+    margin-bottom: 32px;
+}
+.caterings a{
+    color: black;
+}
+.caterings a:hover{
+    color:rgb(87, 5, 45) ;
+}
+
+/* promociones */
+.promociones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 350px 350px;
+    column-gap: 20px;
+    row-gap: 15px;
+    justify-content: space-around;
+    margin: 20px;
+    margin-right: 20px;
+}
+.promo{
+    background-color: blueviolet;
+    
+    border-radius: 5%;
+}
+
+
+/* PÁGINA PRODUCTOS */
+
+.contenedor{
+    display: flex;
+    width: 90%;
+    height:100%;
+    justify-self: center;
+    background:rgba(234, 132, 132, 0.818) ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+.nav-lateral{
+    width: 20%;
+    height: 100%;
+    position:sticky;
+    display:inline-block;
+    margin-left: 55px;
+    padding-top: 35px;
+    text-align:justify;
+    vertical-align: top;
+    line-height: 35px;
+
+    /* border: 2px solid ; */
+}
+.h2-productos{
+    padding-top: 0%;
+    padding-left: 40px;
+}
+.nav-lateral ul {
+    list-style: none;
+    
+}
+.nav-lateral ul li{
+    margin-bottom: 10px;
+}
+.sub-nav-lateral {
+    text-align: start;
+    max-width: fit-content;
+    align-content: end;
+    padding: 0%;
+    margin-left: 20px;
+
+    /* border: 2px solid orange; */
+}
+.contenido-productos{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    padding-top: 60px;
+    text-align: center;
+    justify-content: space-around;
+    /* border: 2px solid ; */
+}
+
+.producto{
+    width: 28%;
+    height: 355px;
+    margin-bottom: 40px;
+    flex-direction: row;
+    /* border: 2px solid red; */
+}
+.producto img{
+    width: 100%;
+    height:250px;
+}
+figcaption{
+    margin-bottom: 40px;
+    font-size: small;
+    text-align: start;
+    font-style: italic;
+}
+.producto a{
+    font-size: medium;
+    text-align: start;
+    width: 100%;
+    left: 0%;
+}
+
+
+/* CONTACTO */
+
+.texto-contacto{
+    width: 100%;
+    display: block;
+    padding-bottom: 15px;
+    border-bottom: 2px solid palevioletred;
+    line-height: 28px;
+}
+.formulario{
+    width: 55%;
+    height: auto;
+    align-content: center;
+    margin-left: 20%;    
+    padding: 5%;
+    background: rgba(234, 132, 132, 0.818);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form{
+    width: 100%;
+}
+.interes{
+    display: block;
+    width: 100%;
+    /* border: 2px solid; */
+    margin-bottom: 30px;
+    padding: 15px;
+}
+.interes select{
+    width: 180px;
+    height: 30px;
+}
+.nombre, .apellido, .email, .telefono,  .localidad{
+    display: inline-block;
+    width: 40%;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    /* border: 2px solid; */
+    padding: 15px;
+}
+.mensaje{
+    display: block;
+    width: 80%;
+    margin-left: 40px;
+    /* border: 2px solid; */
+}
+.mensaje label{
+    display: block;
+}
+.mensaje textarea{
+    margin: 10px;
+    width: 100% ;
+}
+form button{
+    background-color: whitesmoke;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 5%;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+form label{
+    padding-bottom: 10px;
+    /* border: 2px solid palevioletred; */
+    margin: 10px;
+
+}
+form input{
+    display: block;
+    width: 180px;
+    height: 30px;
+    margin: 10px;
+}
+
+
+/*  REGISTRARSE */
+ .formulario-registro{
+    width: 90%;
+    height: auto;
+    align-content: center;
+    margin: 15px;    
+    padding: 15px;
+    background: rgba(234, 132, 132, 0.818);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nombre-registro,.email-registro,.telefono-registro,.domicilio-registro,.pago-registro{
+    display: block;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    /* border: 2px solid; */
+    padding: 5px;
+}
+.formulario-registro input{
+    width: 100%;
+}
+@media (min-width:600px){
+    .formulario-registro{
+        width: 55%;
+        margin-left: 20%;
+        padding: 5%;
+    }
+}
+
+
+
+/* footer */
+footer{
+    margin: 50px 0 0 0;
+    background-color: rgba(214, 121, 172, 0.911) ;
+    bottom: 0%;
+    width: 100%;
+    height: 75px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+footer div{
+    display:inline-block;
+    width:32%;
+    text-align: center;
+    /* border: 5px solid crimson; */
+    
+}
+footer ul li{
+    text-align: start;
+    list-style: none;
+    margin-bottom: 10px;
+}
+.footer-politicas{
+    margin-left: 25px;
+}
+.footer-horario{
+    text-align: center; 
+    vertical-align: center;
+}
+.footer-links{
+    text-align: end;
+}
+.footer-links img{
+    width:50px;
+}
+.footer-horario,.footer-links,.footer-politicas{
+    height: 75px;
+    align-content: center;
+    vertical-align: middle;
+}
+@media (max-width:600px) {
+    .footer-politicas{
+        font-size: 10px
+    } ;
+}

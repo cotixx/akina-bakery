@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akina Bakery</title>
+<!--CSS-->   
+    <link rel="stylesheet" href="../css/styles.css">
+<!--Fonts-->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Milonga&display=swap');
+</style>
+</head>
+<body>
+
+    <header>
+        <nav>
+                <ul>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>    
+                <h1><a href="index.html">Akina Bakery</a></h1>
+                <ul >
+                    <li><a href="./registrarse.html">Registrarse</a></li>
+                    <li><a href="./ingresar.html">Ingresar</a></li>
+    
+                </ul>
+            <a href="./paginas/carrito.html" class="navegador-carrito"><img src="../imagenes/cart.png" alt="Carrito"></a>    
+        </nav>
+    </header>
+<main>
+<section class="formulario">
+<p class="texto-contacto"> 
+    Gracias por visitarnos! <br>
+    Por consultas y/o sugerencias por favor no dudes en dejarnos tu mensaje. <br>
+    Completando el formulario de consulta con tus datos, nos pondremos en contacto a la brevedad.</p>
+
+<form action="coty.serrano001@gmail.com" method="post">
+<section class="interes">
+    <label for="interes">Tengo interés en: </label>
+    <select name="interes" id="interes" required>
+        <option value="">Por favor seleccione </option>
+        <option value="">Presupuesto</option>
+        <option value="">Consulta</option>
+        <option value="">Trabajar en Akina</option>
+    </select>
+</section>
+<section class="nombre">
+    <label for="nombre" >Nombre </label>
+    <input type="text" name="nombre" id="nombre" required>
+</section>
+<section class="apellido">
+    <label for="apellido">Apellido </label>
+    <input type="text" name="apellido" id="apellido" required>
+</section>
+<section class="email">
+    <label for="email">Email </label>
+    <input type="email" name="email" id="email">
+</section>
+<section class="telefono">
+    <label for="telefono">Teléfono </label>
+    <input type="tel" name="telefono" id="telefono">
+</section>
+<section class="localidad">
+    <label for="localidad">Localidad </label>
+    <input type="text" name="localidad" id="localidad">
+</section>
+<section class="mensaje">
+    <label for="mensaje">Mensaje</label>
+    <textarea name="mensaje" id="mensaje" cols="50" rows="10"></textarea>
+</section>
+<section><button type="submit">Enviar</button></section>
+</form>
+</section>
+
+
+</main>
+<footer>
+        <div class="footer-politicas">
+          <ul>
+            <li>Políticas de privacidad</li>
+            <li><a href="./paginas/contacto.html">Contacto</a></li>
+          </ul> 
+        </div>
+        <div class="footer-horario">
+            Lunes a Sábados: 09:00hs-17:00hs 
+        </div>
+        <div class="footer-links"> 
+            <a href="https://www.facebook.com" target="_blank"><img src="../imagenes/face.png" alt="Enlace a página de Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="../imagenes/ig.png" alt="Enlace a página de Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>
