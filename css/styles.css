@@ -5,6 +5,10 @@
     titulo font: milonga
     hover: rgb(87, 5, 45)
     minimo pantalla: 300px
+    576px para teléfonos móviles
+    768px para las tabletas
+    992px para portátiles
+    1200px para los grandes dispositivos
 */
 /* para todas las páginas*/
 *{
@@ -18,7 +22,6 @@ body{
     background-size: cover;
     background-position:center;
     font-family: Arial, Helvetica, sans-serif;
-    min-height:100vh;
 }
 a:any-link{
     text-decoration: none;
@@ -406,11 +409,11 @@ form input{
     display: block;
     flex-wrap: wrap;
     margin-bottom: 10px;
-    border: 2px solid;
     padding: 5px;
+    /* border: 2px solid; */
 }
 .formulario-registro input{
-    width: 100%;
+    width: 90%;
 }
 
 @media (min-width:600px){
@@ -435,6 +438,7 @@ footer{
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
+    position:static;
 }
 footer div{
     display:inline-block;
