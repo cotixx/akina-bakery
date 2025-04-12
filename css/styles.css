@@ -22,6 +22,8 @@ body{
     background-size: cover;
     background-position:center;
     font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+    margin-top: 115px;
 }
 a:any-link{
     text-decoration: none;
@@ -43,6 +45,7 @@ header{
     width: 100%;
     height: 75px;
     z-index: 9;
+
 }
 
 nav{
@@ -89,12 +92,77 @@ header, nav ul, .navegador-carrito{
     align-items: center;
     text-align: center;
 }
-
-
-/* BODY */
-main{
-    margin-top: 40px;
+@media (max-width:700px) {
+    nav, header{
+        display: none;
+    }
+    .nav2{
+        height: 75px;
+        padding: 0%;
+        border: 0%;
+        margin-bottom: 40px;
+        width: 100%;
+        display: flex;
+        background-color: rgba(214, 121, 172, 0.911);
+    }
+    .menu-fuera, .header-fuera{
+        background-color: rgba(214, 121, 172, 0.911);
+        opacity: 0.8;
+    }
+    .header-fuera{
+        font-family: milonga;
+    }
+    .titulo-header-nav2{
+        text-align: center;
+        width: 100%;
+        font-size: 30px;
+        color: black;
+        
+    }
+    .menu-fuera li{
+        list-style: none;
+        text-align:center;
+        padding-right: 50px;
+        line-height: 50px;
+    }
+    .menu-fuera ul{
+        text-align: start;
+        line-height: 40px;
+    }
+    .menu-fuera a{
+        color: black;
+        font-size: 20px;
+    }
+    .dentro-nav2{
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+        display: flex;
+        vertical-align: middle;
+        margin: 0 10px;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .dentro-nav2 h1{
+        text-align: center;
+        width: auto;
+    }
+    .btn img{
+        width: 40px;
+        height: 80%;
+        padding: 0%;
+        margin: 0%;
+    }
+    
 }
+@media (min-width:701px){
+    .nav2{
+        display: none;
+    }
+}
+
+
+
 /* INDEX */
 .mas-vendidas{
     display: inline-block;
@@ -215,7 +283,7 @@ main{
     color:rgb(87, 5, 45) ;
 }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
     .mas-vendidas{
         position:relative;
         display: inline-block;
@@ -233,6 +301,10 @@ main{
         top: 45%;
         left: 50%;
         font-size:60px;
+        font-style: italic;
+    }
+    .mas-vendidas a{
+        color: rgb(87, 5, 45);
     }
     .mas-vendidas h3:hover{
         background: none;
@@ -255,6 +327,11 @@ main{
         left: 50%;
         font-size:60px;
         z-index: 9;
+        color:rgb(87, 5, 45);
+        font-style: italic;
+    }
+    .caterings a{
+        color:rgb(87, 5, 45);
     }
     .caterings h3:hover{
         background: none;
@@ -276,6 +353,11 @@ main{
         top: 45%;
         left: 50%;
         font-size:60px;
+        color:rgb(87, 5, 45);
+        font-style: italic;
+    }
+    .tortas a{
+        color:rgb(87, 5, 45);
 
     }
     .tortas h3:hover{
@@ -329,7 +411,7 @@ main{
     grid-area: promo8;
 }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
     .promociones{
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
@@ -523,7 +605,7 @@ form input{
     width: 90%;
 }
 
-@media (min-width:600px){
+@media (min-width:700px){
     .formulario-registro{
         width: 55%;
         margin-left: 20%;
@@ -576,7 +658,7 @@ footer ul li{
     align-content: center;
     vertical-align: middle;
 }
-@media (max-width:600px) {
+@media (max-width:700px) {
     .footer-politicas{
         font-size: 20px;
         font-size: medium;

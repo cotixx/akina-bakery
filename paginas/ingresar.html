@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akina Bakery</title>
-<!--CSS-->   
-<link rel="stylesheet" href="../css/styles.css">
+
 <!--Fonts-->
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Milonga&display=swap');
 </style>
+<!--BOOTSTRAP-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<!--CSS-->   
+<link rel="stylesheet" href="../css/styles.css">
+
 </head>
 <body>
-    <header>
+    <header class="fixed-top">
         <nav>
                 <ul>
                     <li><a href="./productos.html">Productos</a></li>
@@ -28,12 +32,40 @@
         </nav>
     </header>
 
+    <div class="nav2 fixed-top">
+        <div class="dentro-nav2">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <img src="../imagenes/menu.png" alt="menu">
+            </button>
+            <h1>Akina Bakery</h1>
+            <button class="btn btn-cart" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <img src="../imagenes/cart.png" alt="carrito">
+            </button>
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header header-fuera">
+          <h5 class="offcanvas-title titulo-header-nav2" id="offcanvasExampleLabel">Akina Bakery</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body menu-fuera">
+            <ul>
+                <ul><a href="./productos.html">Ver todos los productos</a>
+                    <li><a  href="#">Tortas</a></li>
+                    <li><a  href="#">Alfajores</a></li>
+                    <li><a  href="#">Macaroon</a></li>
+                </ul>
+                <ul><a href="./ingresar.html">Iniciar Sesión</a></ul>
+                <ul><a href="./registrarse.html">Registrarse</a></ul>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+<main>
 
 
 
-
-
-
+</main>
 
 <footer>
     <div class="footer-politicas">
@@ -50,5 +82,7 @@
         <a href="https://www.instagram.com" target="_blank"><img src="../imagenes/ig.png" alt="Enlace a página de Instagram"></a>
     </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>
