@@ -39,7 +39,7 @@
                 <img src="../imagenes/menu.png" alt="menu">
             </button>
             <h1><a href="../index.html">Akina Bakery</a></h1>
-            <button class="btn btn-cart" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <button class="btn btn-cart" type="button" data-bs-toggle="offcanvas offcanvas-cart" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                 <img src="../imagenes/cart.png" alt="carrito">
             </button>
         </div>
@@ -57,8 +57,8 @@
                     <li><a href="#">Eventos</a></li>
                     <li><a href="#">Gift Cards</a></li>
                 </ul>
-                <ul><a href="./paginas/ingresar.html">Iniciar Sesión</a></ul>
-                <ul><a href="./paginas/registrarse.html">Registrarse</a></ul>
+                <ul><a href="./ingresar.html">Iniciar Sesión</a></ul>
+                <ul><a href="./registrarse.html">Registrarse</a></ul>
                 
             </ul>
         </div>
@@ -68,71 +68,38 @@
 
 <main>
 <div class="contenedor">
-    <div class="nav-lateral">
-        <h2 class="h2-productos">Categorías</h2> 
+    <div class="lateral">
+        <button class="btn boton-lateral" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Categorías
+        </button>
+        </p>
+        <div class="collapse" id="collapseExample">
             <ul>
-                <li class="dropdown-nav-lateral">Pastelería</li>
-                    <ul class="sub-nav-lateral">
-                        <li>Mini Tortas</li>
-                        <li>Tortas Clásicas</li>
-                        <li>Tortas Temáticas</li>
-                        <li>Alfajores</li>
-                        <li>Macaroons</li>
-                    </ul>
-                <li>Eventos</li>
-                <li>Gift Cards</li>
-         </ul>
+                <li>Tortas</li>
+                <li>Alfajores</li>
+                <li>Macaroon</li>
+                <li>Promociones</li>
+            </ul>
+        </div class="lateral2"> 
+            <ul>
+                    <li>Eventos</li>
+                    <li>Gift Cards</li>
+            </ul>
+        </div>
+    
+    <div class="contenido-productos">
+        <a href="" class="producto1"><img src="../imagenes/producto1.jpg" alt="producto"><figcaption>descripción</figcaption></a>
+        <a href=""class="producto2"><img src="../imagenes/producto2.jpg" alt="producto"><figcaption>descripción</figcaption></a>
+        <a href=""class="producto3"><img src="../imagenes/producto3.jpg" alt="producto"><figcaption>descripción</figcaption></a>
+        <a href=""class="producto4"><img src="../imagenes/producto4.jpg" alt="producto"><figcaption>descripción</figcaption></a>
+        <a href=""class="producto5"><img src="../imagenes/producto5.jpg" alt="producto"><figcaption>descripción</figcaption></a>
+        <a href=""class="producto6"><img src="../imagenes/producto6.jpg" alt="producto"><figcaption>descripción</figcaption></a>
+        <a href=""class="producto7"><img src="../imagenes/producto7.jpg" alt="producto"><figcaption>descripción</figcaption></a>
+        <a href=""class="producto8"><img src="../imagenes/cheesecake.jpg" alt="producto"><figcaption>descripción</figcaption></a>
+        <a href=""class="producto9"><img src="../imagenes/chocotorta.jpg" alt="producto"><figcaption>descripción</figcaption></a>
+        <a href=""class="producto10"><img src="../imagenes/tortas-clasicas.jpg" alt="producto"><figcaption>descripción</figcaption></a>
+    </div>
 </div>
-<div class="contenido-productos">
-    <div class="producto"><img src="../imagenes/producto1.jpg" alt="producto"><figcaption>descripción</figcaption><a href="">Producto1</a>
-    </div>
-    <div class="producto"><img src="../imagenes/producto2.jpg" alt="producto"><figcaption>descripción</figcaption><a href="">Producto2</a>
-    </div>
-    <div class="producto"><img src="../imagenes/producto3.jpg" alt="producto"><figcaption>descripción</figcaption><a href="">Producto3</a>
-    </div>
-    <div class="producto"><img src="../imagenes/producto4.jpg" alt="producto"><figcaption>descripción</figcaption><a href="">Producto4</a>
-    </div>
-    <div class="producto"><img src="../imagenes/producto5.jpg" alt="producto"><figcaption>descripción</figcaption><a href="">Producto5</a>
-    </div>
-    <div class="producto"><img src="../imagenes/producto6.jpg" alt="producto"><figcaption>descripción</figcaption><a href="">Producto6</a>
-    </div>
-    <div class="producto"><img src="" alt="producto"><h6>descripción</h6><a href="">Producto1</a>
-    </div>
-    <div class="producto"><img src="" alt="producto"><h6>descripción</h6><a href="">Producto1</a>
-    </div>
-    <div class="producto"><img src="" alt="producto"><h6>descripción</h6><a href="">Producto1</a>
-    </div>
-    <div class="producto"><img src="" alt="producto"><h6>descripción</h6><a href="">Producto1</a>
-    </div>
-    <div class="producto"><img src="" alt="producto"><h6>descripción</h6><a href="">Producto1</a>
-    </div>
-    <div class="producto"><img src="" alt="producto"><h6>descripción</h6><a href="">Producto1</a>
-    </div>
-    <div class="producto"><img src="" alt="producto"><h6>descripción</h6><a href="">Producto1</a>
-    </div>
-    <div class="producto"><img src="" alt="producto"><h6>descripción</h6><a href="">Producto1</a>
-    </div>
-    <div class="producto"><img src="" alt="producto"><h6>descripción</h6><a href="">Producto1</a>
-    </div>
-    <div class="producto"><img src="" alt="producto"><h6>descripción</h6><a href="">Producto1</a>
-    </div>
-    <div class="producto"><img src="" alt="producto"><h6>descripción</h6><a href="">Producto1</a>
-    </div>
-    <div class="producto"><img src="" alt="producto"><h6>descripción</h6><a href="">Producto1</a>
-    </div>
-    <div class="producto"><img src="" alt="producto"><h6>descripción</h6><a href="">Producto1</a>
-    </div>
-    <div class="producto"><img src="" alt="producto"><h6>descripción</h6><a href="">Producto1</a>
-    </div>
-    <div class="producto"><img src="" alt="producto"><h6>descripción</h6><a href="">Producto1</a>
-    </div>
-    <div class="producto"><img src="" alt="producto"><h6>descripción</h6><a href="">Producto1</a>
-    </div>
-    <div class="producto"><img src="" alt="producto"><h6>descripción</h6><a href="">Producto1</a>
-    </div>
-
-</div>
-
 </div>
 </main>    
 

@@ -37,8 +37,8 @@
             <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                 <img src="../imagenes/menu.png" alt="menu">
             </button>
-            <h1>Akina Bakery</h1>
-            <button class="btn btn-cart" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <h1><a href="../index.html">Akina Bakery</a></h1>
+            <button class="btn btn-cart" type="button" data-bs-toggle="offcanvas offcanvas-cart" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                 <img src="../imagenes/cart.png" alt="carrito">
             </button>
         </div>
@@ -49,7 +49,7 @@
         </div>
         <div class="offcanvas-body menu-fuera">
             <ul>
-                <ul><a href="./productos.html">Ver todos los productos</a>
+                <ul><a href=".//productos.html">Ver todos los productos</a>
                     <li><a  href="#">Tortas</a></li>
                     <li><a  href="#">Alfajores</a></li>
                     <li><a  href="#">Macaroon</a></li>
@@ -62,8 +62,20 @@
     </div>
 
 <main>
-
-
+<section class="formulario-ingreso">
+    <form action="" method="post">
+        
+        <section class="email-ingreso">
+            <label for="email">Email </label>
+            <input type="email" name="email" id="email" required>
+        </section>
+       <section class="contrasena-ingreso">
+        <label for="contrasena">Contraseña</label>
+        <input type="password" name="contrasena" id="contrasena" placeholder=" Ingresar contraseña" required>
+       </section>
+        <section><button type="submit">Enviar</button></section>
+        </form>
+</section>
 
 </main>
 

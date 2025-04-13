@@ -22,7 +22,7 @@ body{
     background-size: cover;
     background-position:center;
     font-family: Arial, Helvetica, sans-serif;
-    height: auto;
+    min-height: 70em;
     margin-top: 115px;
 }
 a:any-link{
@@ -423,6 +423,9 @@ header, nav ul, .navegador-carrito{
     }
 }
 
+
+
+
 /* PÁGINA PRODUCTOS */
 
 .contenedor{
@@ -434,14 +437,16 @@ header, nav ul, .navegador-carrito{
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
 }
-.nav-lateral{
+.contenedor ul{
+    text-align: start;
+}
+.lateral{
     width: 20%;
     height: 100%;
     position:sticky;
     display:inline-block;
-    margin-left: 55px;
     padding-top: 35px;
-    text-align:justify;
+    margin: 0 30px;
     vertical-align: top;
     line-height: 35px;
 
@@ -449,46 +454,87 @@ header, nav ul, .navegador-carrito{
 }
 .h2-productos{
     padding-top: 0%;
-    padding-left: 40px;
 }
-.nav-lateral ul {
+.lateral ul {
     list-style: none;
     
 }
-.nav-lateral ul li{
+.lateral ul li{
     margin-bottom: 10px;
 }
-.sub-nav-lateral {
+.boton-lateral{
+    font-size: 20px;
+    border-bottom: 3px solid rgba(214, 121, 172);
+}
+.lateral2 ul{
+    text-align: start;
+    padding-left: none;
+    margin-left: none;
+}
+.sub-lateral {
     text-align: start;
     max-width: fit-content;
     align-content: end;
     padding: 0%;
     margin-left: 20px;
 
-    /* border: 2px solid orange; */
+    border: 2px solid orange;
 }
 .contenido-productos{
     width: 70%;
     height: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, 355px);
+    grid-template-areas: 
+        "producto1 producto2 producto3 producto4"
+        "producto5 producto6 producto7 producto8"
+        "producto9 producto10 producto11 producto12"
+        ;
     float: right;
-    padding-top: 60px;
-    text-align: center;
     justify-content: space-around;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin-left: 20px;
+    column-gap: 15px;
+    row-gap: 20px;
     /* border: 2px solid ; */
 }
-
-.producto{
-    width: 28%;
-    height: 355px;
-    margin-bottom: 40px;
-    flex-direction: row;
-    /* border: 2px solid red; */
-}
-.producto img{
+.contenido-productos img{
     width: 100%;
-    height:250px;
+    height: 350px;
+    border-radius: 5%;
+}
+
+.producto1{
+    grid-area: producto1;
+}
+.producto2{
+    grid-area: producto2;
+}
+.producto3{
+    grid-area: producto3;
+}
+.producto4{
+    grid-area: producto4;
+}
+.producto5{
+    grid-area: producto5;
+}
+.producto6{
+    grid-area: producto6;
+}
+.producto7{
+    grid-area: producto7;
+}
+.producto8{
+    grid-area: producto8;
+}
+.producto9{
+    grid-area: producto9;
+}
+.producto10{
+    grid-area: producto10;
 }
 figcaption{
     margin-bottom: 40px;
@@ -502,6 +548,38 @@ figcaption{
     width: 100%;
     left: 0%;
 }
+
+@media (max-width:700px) {
+    .contenido-productos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 200px;
+        grid-template-areas:
+        "producto1 producto2"
+        "producto3 producto4"
+        "producto5 producto6"
+        "producto7 producto8"
+        "producto9 producto10";
+        ;
+        justify-content: space-around;
+        padding:60px 15px;
+    }
+    .contenido-productos img{
+        width: 100%;
+        height: 200px;
+        border-radius: 5%;
+    }
+    .lateral,.lateral2{
+        margin-left:5px;
+        z-index: 9;
+    }
+    .lateral .boton-lateral{
+        border-bottom: 2px solid palevioletred;
+    }
+}
+
+
+
+
 
 
 /* CONTACTO */
@@ -583,6 +661,29 @@ form input{
     margin: 10px;
 }
 
+@media (max-width:700px){
+    .formulario{
+        width: 90%;
+        margin: 15px;
+        padding: 15px;
+    }
+    .texto-contacto{
+        display: none;
+    }
+    .texto2{
+        padding-bottom: 10px;
+        border-bottom: 2px solid palevioletred ;
+    }
+}
+@media (min-width:701px) {
+    .texto2{
+        display: none;
+    }
+}
+
+
+
+
 
 /*  REGISTRARSE */
  .formulario-registro{
@@ -612,6 +713,36 @@ form input{
         padding: 5%;
     }
 }
+
+/* INICIAR SESION */
+
+.formulario-ingreso{
+    width: 90%;
+    height: 100%;
+    align-content: center;
+    margin: 15px;    
+    padding: 15px;
+    background: rgba(234, 132, 132, 0.818);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.email-ingreso, .contrasena-ingreso{
+    display: block;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.formulario-ingreso input{
+    width: 90%;
+}
+@media (min-width:700px){
+    .formulario-ingreso{
+        width: 55%;
+        margin-left: 20%;
+        padding: 5%;
+    }
+}
+
 
 
 

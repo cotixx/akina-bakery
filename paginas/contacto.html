@@ -39,8 +39,8 @@
             <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                 <img src="../imagenes/menu.png" alt="menu">
             </button>
-            <h1>Akina Bakery</h1>
-            <button class="btn btn-cart" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <h1><a href="../index.html">Akina Bakery</a></h1>
+            <button class="btn btn-cart" type="button" data-bs-toggle="offcanvas offcanvas-cart" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                 <img src="../imagenes/cart.png" alt="carrito">
             </button>
         </div>
@@ -68,9 +68,12 @@
 <p class="texto-contacto"> 
     Gracias por visitarnos! <br>
     Por consultas y/o sugerencias por favor no dudes en dejarnos tu mensaje. <br>
-    Completando el formulario de consulta con tus datos, nos pondremos en contacto a la brevedad.</p>
+    Completando el formulario de consulta con tus datos, nos pondremos en contacto a la brevedad.
+</p>
+<p class="texto2">Completando el formulario de consulta con tus datos, nos pondremos en contacto a la brevedad.</p>
 
-<form action="coty.serrano001@gmail.com" method="post">
+
+<form action="" method="post">
 <section class="interes">
     <label for="interes">Tengo interés en: </label>
     <select name="interes" id="interes" required>
@@ -90,19 +93,20 @@
 </section>
 <section class="email">
     <label for="email">Email </label>
-    <input type="email" name="email" id="email">
+    <input type="email" name="email" id="email" required>
 </section>
 <section class="telefono">
     <label for="telefono">Teléfono </label>
-    <input type="tel" name="telefono" id="telefono">
+    <input type="tel" name="telefono" id="telefono" placeholder=" Nos comunicaremos a través de WhatsApp" required>
 </section>
 <section class="localidad">
     <label for="localidad">Localidad </label>
-    <input type="text" name="localidad" id="localidad">
+    <input type="text" name="localidad" id="localidad" placeholder=" Localidad, dirección y código postal" required>
 </section>
 <section class="mensaje">
     <label for="mensaje">Mensaje</label>
-    <textarea name="mensaje" id="mensaje" cols="50" rows="10"></textarea>
+    <textarea name="mensaje" id="mensaje" cols="50" rows="10" placeholder=" Adjuntar archivo de ser necesario" required></textarea>
+    <input type="file" name="adjunto" id="adjunto">
 </section>
 <section><button type="submit">Enviar</button></section>
 </form>
