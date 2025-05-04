@@ -1,0 +1,36 @@
+@use "_estilos" as*;
+
+.formulario-ingreso{
+    width: 85%;
+    height: 200%;
+    align-content: center;
+    margin: 4%;    
+    padding: 15px;
+    background: rgba(234, 132, 132, 0.818);
+    font-family: Arial, Helvetica, sans-serif;
+    input{
+        width: 90%;
+    }
+}
+
+%form-ingreso{
+    display: block;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.email-ingreso{
+    @extend %form-ingreso;
+}
+.contrasena-ingreso{
+    @extend %form-ingreso;
+}
+
+@media (min-width:700px){
+    .formulario-ingreso{
+        width: 55%;
+        height: 100%;
+        margin-left: 20%;
+        padding: 5%;
+    }
+}

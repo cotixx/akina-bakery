@@ -1,0 +1,40 @@
+$rosita:rgb(234, 132, 132, 0.818);
+$rosanav:rgb(214, 121, 172, 0.911);
+$bordo: rgb(87,5,45);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: none;
+    box-sizing: inherit;
+    &::after,&::before{
+        box-sizing: inherit;
+    }
+}
+html{
+    height: 100%;
+}
+body{
+    background-image: url(../imagenes/akina.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 115px;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 10rem;
+}
+a{ 
+    &:any-link{
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    &:visited{
+        color: whitesmoke;
+    }
+    &:hover{
+        color:rgb(87, 5, 45);
+    }
+}

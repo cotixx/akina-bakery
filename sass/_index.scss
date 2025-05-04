@@ -1,0 +1,282 @@
+@use "_estilos" as*;
+
+/*INDEX*/
+.mas-vendidas{
+    display: inline-block;
+    width: 100%;
+    padding: 0%;
+    margin-bottom: 0%;
+    img{
+        opacity: 0.95;
+        width: 50%;
+        height: 350px;
+        margin-top: 25px;
+        margin-bottom: 32px;
+        vertical-align: middle;
+        text-align: center;
+        align-content: center;
+        background-color: rgb(217, 217, 217,90%);
+        padding: 0%;
+        opacity: 0.95;
+    }
+    h3{
+        width: 50%;
+        height: 350px;
+        margin-top: 25px;
+        margin-bottom: 32px;
+        vertical-align: middle;
+        text-align: center;
+        align-content: center;
+        background-color: rgb(217, 217, 217,90%);
+        padding: 0%;
+        font-size: 50px;
+        float: right;
+        &:hover{
+            font-size: 60px;
+            font-style: italic;
+            display: inline-block;
+            background-color: rgb(217, 217, 217,90%);
+            margin-bottom: 32px;
+        }
+    }
+    a{
+        color: black;
+        &:hover{
+            color: $bordo;
+        }
+    }
+
+}
+.tortas{
+    display: inline-block;
+    width: 100%;
+    margin-top: 0%;
+    padding: 0%;
+
+    h3{
+        font-size: 50px;
+        float: right;
+        width: 50%;
+        height: 350px;
+        margin-top: 2px;
+        margin-bottom: 32px;
+        vertical-align: middle;
+        text-align: center;
+        align-content: center;
+        background-color: rgb(217, 217, 217,90%) ;
+        padding: 0%;
+        &:hover{
+            font-size: 60px;
+            font-style: italic;
+            display: inline-block;
+            background-color:  rgb(217, 217, 217,90%);
+            margin-bottom: 32px;
+            padding: 0%;
+        }
+    }
+    img{
+        width: 50%;
+        height: 350px;
+        margin-top: 2px;
+        margin-bottom: 32px;
+        vertical-align: middle;
+        text-align: center;
+        align-content: center;
+        background-color: rgb(217, 217, 217,90%) ;
+        padding: 0%;
+        opacity: 0.95;
+        
+    }
+    a{
+        color: black;
+        &:hover{
+            color: $bordo;
+        }
+    }
+}
+
+.caterings{
+    display: inline-block;
+    width: 100%;
+    margin-top: 0%;
+    padding: 0%;
+    h3{
+        font-size: 50px;
+        float: left;
+        width: 50%;
+        height: 350px;
+        margin-top: 2px;
+        margin-bottom: 32px;
+        vertical-align: middle;
+        text-align: center;
+        align-content: center;
+        background-color: rgb(217, 217, 217,90%) ;
+        padding: 0%;
+        &:hover{
+            font-size: 60px;
+            font-style: italic;
+            display: inline-block;
+            background-color:  rgb(217, 217, 217,90%);
+            padding: 0%;
+            margin-bottom: 32px;
+        }
+    }
+    img{
+        width: 50%;
+        height: 350px;
+        margin-top: 2px;
+        margin-bottom: 32px;
+        vertical-align: middle;
+        text-align: center;
+        align-content: center;
+        background-color: rgb(217, 217, 217,90%) ;
+        padding: 0%;
+        opacity: 0.95;
+    }
+    a{
+        color: black;
+        &:hover{
+            color: $bordo;
+        }
+    }
+}
+
+@media (max-width:700px) {
+    .mas-vendidas{
+        position:relative;
+        display: inline-block;
+        text-align: center;
+    }
+    .mas-vendidas img{
+        width: 100%;
+        opacity: 90%;
+    }
+    .mas-vendidas h3{
+        background: none;
+        width: 100%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 45%;
+        left: 50%;
+        font-size:60px;
+        font-style: italic;
+    }
+    .mas-vendidas a{
+        color: rgb(87, 5, 45);
+    }
+    .mas-vendidas h3:hover{
+        background: none;
+    }
+    .caterings{
+        position:relative;
+        display: inline-block;
+        text-align: center;
+    }
+    .caterings img{
+        width: 100%;
+        opacity: 90%;
+    }
+    .caterings h3{
+        background: none;
+        width: 100%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 45%;
+        left: 50%;
+        font-size:60px;
+        z-index: 9;
+        color:rgb(87, 5, 45);
+        font-style: italic;
+    }
+    .caterings a{
+        color:rgb(87, 5, 45);
+    }
+    .caterings h3:hover{
+        background: none;
+    }
+    .tortas{
+        position:relative;
+        display: inline-block;
+        text-align: center;
+    }
+    .tortas img{
+        width: 100%;
+        opacity: 90%;
+    }
+    .tortas h3{
+        background: none;
+        width: 100%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 45%;
+        left: 50%;
+        font-size:60px;
+        color:rgb(87, 5, 45);
+        font-style: italic;
+    }
+    .tortas a{
+        color:rgb(87, 5, 45);
+
+    }
+    .tortas h3:hover{
+        background: none;
+    }
+}
+
+.promociones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 350px 350px;
+    grid-template-areas: 
+        "promo1 promo2 promo3 promo4"
+        "promo5 promo6 promo7 promo8";
+    column-gap: 20px;
+    row-gap: 25px;
+    justify-content: space-around;
+    margin: 20px;
+    margin-right: 20px;
+
+    a{
+        color: black;
+    }
+    img{
+        width: 100%;
+        height: 350px;
+        border-radius: 5%;
+    } 
+}
+.promo1{
+    grid-area:promo1;
+}
+.promo2{
+    grid-area:promo2;
+}
+.promo3{
+    grid-area: promo3;
+}
+.promo4{
+    grid-area:promo4;
+}
+.promo5{
+    grid-area:promo5;
+}
+.promo6{
+    grid-area: promo6;
+}
+.promo7{
+    grid-area: promo7;
+}
+.promo8{
+    grid-area: promo8;
+}
+@media (max-width:700px) {
+    .promociones{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "promo1 promo2"
+        "promo3 promo4"
+        "promo5 promo6"
+        "promo7 promo8"    ;
+    row-gap: 25px;
+    }
+}

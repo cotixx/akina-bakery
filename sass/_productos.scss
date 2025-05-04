@@ -1,0 +1,152 @@
+@use "_estilos" as*;
+
+.contenedor{
+    display: flex;
+    width: 90%;
+    height:100%;
+    justify-self: center;
+    background:rgba(234, 132, 132, 0.818) ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+
+    ul{
+        text-align: start;
+    }
+}
+.lateral{
+    width: 20%;
+    height: 100%;
+    position:sticky;
+    display:inline-block;
+    padding-top: 35px;
+    margin: 0 30px;
+    vertical-align: top;
+    line-height: 35px;
+    ul{
+        list-style: none;
+        li{
+            margin-bottom: 10px;   
+        }
+    }
+    /* border: 2px solid ; */
+}
+.h2-productos{
+    padding-top: 0%;
+}
+.boton-lateral{
+    font-size: 20px;
+    border-bottom: 3px solid rgba(214, 121, 172);
+}
+.lateral2 ul{
+    text-align: start;
+    padding-left: none;
+    margin-left: none;
+}
+.sub-lateral {
+    text-align: start;
+    max-width: fit-content;
+    align-content: end;
+    padding: 0%;
+    margin-left: 20px;
+
+    border: 2px solid orange;
+}
+.contenido-productos{
+    width: 70%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, 355px);
+    grid-template-areas: 
+        "producto1 producto2 producto3 producto4"
+        "producto5 producto6 producto7 producto8"
+        "producto9 producto10 producto11 producto12"
+        ;
+    float: right;
+    justify-content: space-around;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin-left: 20px;
+    column-gap: 15px;
+    gap: 40px;
+    img{
+        width: 100%;
+        height: 350px;
+        border-radius: 5%;
+    }
+    /* border: 2px solid ; */
+}
+.producto1{
+    grid-area: producto1;
+}
+.producto2{
+    grid-area: producto2;
+}
+.producto3{
+    grid-area: producto3;
+}
+.producto4{
+    grid-area: producto4;
+}
+.producto5{
+    grid-area: producto5;
+}
+.producto6{
+    grid-area: producto6;
+}
+.producto7{
+    grid-area: producto7;
+}
+.producto8{
+    grid-area: producto8;
+}
+.producto9{
+    grid-area: producto9;
+}
+.producto10{
+    grid-area: producto10;
+}
+figcaption{
+    margin-bottom: 40px;
+    font-size: medium;
+    text-align: start;
+    font-style: italic;
+}
+.producto a{
+    font-size: medium;
+    text-align: start;
+    width: 100%;
+    left: 0%;
+}
+
+
+
+@media (max-width:700px) {
+    .contenido-productos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5,200px);
+        grid-template-areas:
+        "producto1 producto2"
+        "producto3 producto4"
+        "producto5 producto6"
+        "producto7 producto8"
+        "producto9 producto10";
+        ;
+        justify-content: space-around;
+        padding:60px 15px;
+        row-gap: 40px;
+    }
+    .contenido-productos img{
+        width: 100%;
+        height: 200px;
+        border-radius: 5%;
+    }
+    .lateral  {
+        display: none;
+    }
+    .lateral .boton-lateral{
+        border-bottom: 2px solid palevioletred;
+    }
+}
+
+
