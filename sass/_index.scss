@@ -226,7 +226,6 @@
 .promociones{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 350px 350px;
     grid-template-areas: 
         "promo1 promo2 promo3 promo4"
         "promo5 promo6 promo7 promo8";
@@ -278,5 +277,9 @@
         "promo5 promo6"
         "promo7 promo8"    ;
     row-gap: 25px;
+    img{
+        height: 250px;
     }
+    }
+    
 }
