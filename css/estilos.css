@@ -467,6 +467,9 @@ footer ul li {
   height: 350px;
   border-radius: 5%;
 }
+.promociones img:hover {
+  animation: pulse 1s;
+}
 
 .promo1 {
   grid-area: promo1;
@@ -512,7 +515,7 @@ footer ul li {
 }
 .contenedor {
   display: flex;
-  width: 90%;
+  width: 95%;
   height: 100%;
   justify-self: center;
   background: rgba(234, 132, 132, 0.818);
@@ -523,59 +526,27 @@ footer ul li {
   text-align: start;
 }
 
-.lateral {
-  width: 20%;
-  height: 100%;
-  position: sticky;
-  display: inline-block;
-  padding-top: 35px;
-  margin: 0 30px;
-  vertical-align: top;
-  line-height: 35px;
+.side-nav {
+  text-decoration: none;
+  margin: 10px;
+  padding-top: 70px;
 }
-.lateral ul {
+.side-nav ul li {
   list-style: none;
-}
-.lateral ul li {
-  margin-bottom: 10px;
-}
-
-.h2-productos {
-  padding-top: 0%;
-}
-
-.boton-lateral {
-  font-size: 20px;
-  border-bottom: 3px solid rgb(214, 121, 172);
-}
-
-.lateral2 ul {
-  text-align: start;
-  padding-left: none;
-  margin-left: none;
-}
-
-.sub-lateral {
-  text-align: start;
-  max-width: fit-content;
-  align-content: end;
-  padding: 0%;
-  margin-left: 20px;
-  border: 2px solid orange;
+  margin-bottom: 1.5em;
 }
 
 .contenido-productos {
-  width: 70%;
+  width: 90%;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 355px);
   grid-template-areas: "producto1 producto2 producto3 producto4" "producto5 producto6 producto7 producto8" "producto9 producto10 producto11 producto12";
-  float: right;
   justify-content: space-around;
   padding-top: 60px;
   padding-bottom: 30px;
-  margin-left: 20px;
+  margin: 20px;
   column-gap: 15px;
   gap: 40px;
 }
@@ -635,32 +606,35 @@ figcaption {
   font-style: italic;
 }
 
-.producto a {
-  font-size: medium;
-  text-align: start;
-  width: 100%;
-  left: 0%;
+@media (min-width: 701px) {
+  .nav-arriba {
+    display: none;
+  }
 }
-
 @media (max-width: 700px) {
   .contenido-productos {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 200px);
     grid-template-areas: "producto1 producto2" "producto3 producto4" "producto5 producto6" "producto7 producto8" "producto9 producto10";
     justify-content: space-around;
-    padding: 60px 15px;
-    row-gap: 40px;
+    padding: 40px 15px;
+    row-gap: 50px;
   }
   .contenido-productos img {
     width: 100%;
     height: 200px;
     border-radius: 5%;
   }
-  .lateral {
+  .side-nav {
     display: none;
   }
-  .lateral .boton-lateral {
-    border-bottom: 2px solid palevioletred;
+  .nav-arriba {
+    margin: 10px;
+    padding: 15px 2.18em;
+    display: inline-block;
+    width: 75%;
+    justify-content: center;
+    background-color: rgba(234, 132, 132, 0.818);
   }
 }
 .formulario-registro {
