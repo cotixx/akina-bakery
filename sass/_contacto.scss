@@ -45,7 +45,7 @@ form{
     }
     input{
         display: block;
-        width: 50%;
+        width: 70%;
         height: 30px;
         margin: 10px;
     }
@@ -88,14 +88,14 @@ form{
     }
 }
 
-@media (max-width:700px){
+@media (max-width:800px){
     .formulario{
         width: 85%;
         margin: 4%;
         padding: 15px;
     }
     .formulario input{
-        width:auto ;
+        width:90% ;
     }
     .nombre, .apellido, .email, .telefono,  .localidad, .interes{
         display: inline-block;
@@ -115,7 +115,7 @@ form{
         max-width: 90%;
     }
 }
-@media (min-width:701px) {
+@media (min-width:801px) {
     .texto2{
         display: none;
     }

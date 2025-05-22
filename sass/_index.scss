@@ -142,7 +142,7 @@
     }
 }
 
-@media (max-width:700px) {
+@media (max-width:800px) {
     .mas-vendidas{
         position:relative;
         display: inline-block;
@@ -272,7 +272,7 @@
 .promo8{
     grid-area: promo8;
 }
-@media (max-width:700px) {
+@media (max-width:800px) {
     .promociones{
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:

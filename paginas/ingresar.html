@@ -38,29 +38,42 @@
                 <img src="../imagenes/menu.png" alt="menu">
             </button>
             <h1><a href="../index.html">Akina Bakery</a></h1>
-            <button class="btn btn-cart" type="button" data-bs-toggle="offcanvas offcanvas-cart" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <button class="btn carrito-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCarrito" aria-controls="offcanvasCarrito">
                 <img src="../imagenes/cart.png" alt="carrito">
             </button>
         </div>
+            
+        <div class="offcanvas offcanvas-end carrito-aside" tabindex="-1" id="offcanvasCarrito" aria-labelledby="offcanvasCarritoLabel">
+            <div class="offcanvas-header header-carrito">
+                <h5 class="offcanvas-title" id="offcanvasCarritoLabel">Carrito de compras</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+            </div>
+            <div class="offcanvas-body cuerpo-carrito">
+                <p>No hay productos en tu carrito.</p>
+                <!-- Aquí puedes agregar la lista de productos si lo haces dinámico más adelante -->
+            </div>
+        </div>
+        
+    
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header header-fuera">
-          <h5 class="offcanvas-title titulo-header-nav2" id="offcanvasExampleLabel">Akina Bakery</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body menu-fuera">
-            <ul>
-                <ul><a href=".//productos.html">Ver todos los productos</a>
-                    <li><a  href="./productos.html">Tortas</a></li>
-                    <li><a  href="./productos.html">Alfajores</a></li>
-                    <li><a  href="./productos.html">Macaroon</a></li>
-                    <li><a href="./paginas/productos.html">Eventos</a></li>
-                    <li><a href="./paginas/productos.html">Gift Cards</a></li>
+            <div class="offcanvas-header header-fuera">
+                <h5 class="offcanvas-title titulo-header-nav2" id="offcanvasExampleLabel">Akina Bakery</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body menu-fuera">
+                <ul>
+                    <ul><a href="./paginas/productos.html">Ver todos los productos</a>
+                        <li><a  href="./paginas/productos.html">Tortas</a></li>
+                        <li><a  href="./paginas/productos.html">Alfajores</a></li>
+                        <li><a  href="./paginas/productos.html">Macaroon</a></li>
+                        <li><a href="./paginas/productos.html">Eventos</a></li>
+                        <li><a href="./paginas/productos.html">Gift Cards</a></li>
+                    </ul>
+                    <ul><a href="./paginas/ingresar.html">Iniciar Sesión</a></ul>
+                    <ul><a href="./paginas/registrarse.html">Registrarse</a></ul>
                 </ul>
-                <ul><a href="./ingresar.html">Iniciar Sesión</a></ul>
-                <ul><a href="./registrarse.html">Registrarse</a></ul>
-            </ul>
+            </div>
         </div>
-      </div>
     </div>
 
 <main>

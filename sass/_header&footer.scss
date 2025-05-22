@@ -56,7 +56,17 @@ h1{
     @extend %comun-nav;
 
 }
-@media (max-width:800px) {
+
+.carrito-aside{
+    .header-carrito{
+        background-color: $rosanav;
+    }
+    .cuerpo-carrito{
+        background-color: $rosanav;
+    }
+}
+
+@media (max-width:900px) {
     nav, header{
         display: none;
     }
@@ -119,7 +129,7 @@ h1{
     }
     
 }
-@media (min-width:700px){
+@media (min-width:900px){
     .nav2{
         display: none;
     }
@@ -180,7 +190,7 @@ footer{
     vertical-align: middle;
 }
 
-@media (max-width:800px) {
+@media (max-width:900px) {
     .footer-politicas{
         font-size: 20px;
         font-size: medium;

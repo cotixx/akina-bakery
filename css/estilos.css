@@ -87,7 +87,14 @@ h1 {
   height: 40px;
 }
 
-@media (max-width: 800px) {
+.carrito-aside .header-carrito {
+  background-color: rgba(214, 121, 172, 0.911);
+}
+.carrito-aside .cuerpo-carrito {
+  background-color: rgba(214, 121, 172, 0.911);
+}
+
+@media (max-width: 900px) {
   nav, header {
     display: none;
   }
@@ -148,7 +155,7 @@ h1 {
     margin: 0%;
   }
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .nav2 {
     display: none;
   }
@@ -208,7 +215,7 @@ footer ul li {
   vertical-align: middle;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .footer-politicas {
     font-size: 20px;
     font-size: medium;
@@ -369,7 +376,7 @@ footer ul li {
   color: rgb(87, 5, 45);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .mas-vendidas {
     position: relative;
     display: inline-block;
@@ -503,7 +510,7 @@ footer ul li {
   grid-area: promo8;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .promociones {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "promo1 promo2" "promo3 promo4" "promo5 promo6" "promo7 promo8";
@@ -606,12 +613,12 @@ figcaption {
   font-style: italic;
 }
 
-@media (min-width: 701px) {
+@media (min-width: 801px) {
   .nav-arriba {
     display: none;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .contenido-productos {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 200px);
@@ -740,7 +747,7 @@ form label {
 }
 form input {
   display: block;
-  width: 50%;
+  width: 70%;
   height: 30px;
   margin: 10px;
 }
@@ -769,14 +776,14 @@ form input {
   width: 100%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .formulario {
     width: 85%;
     margin: 4%;
     padding: 15px;
   }
   .formulario input {
-    width: auto;
+    width: 90%;
   }
   .nombre, .apellido, .email, .telefono, .localidad, .interes {
     display: inline-block;
@@ -796,7 +803,7 @@ form input {
     max-width: 90%;
   }
 }
-@media (min-width: 701px) {
+@media (min-width: 801px) {
   .texto2 {
     display: none;
   }
