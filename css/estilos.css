@@ -87,7 +87,7 @@ h1 {
   height: 40px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   nav, header {
     display: none;
   }
@@ -208,7 +208,7 @@ footer ul li {
   vertical-align: middle;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .footer-politicas {
     font-size: 20px;
     font-size: medium;

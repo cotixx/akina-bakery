@@ -56,7 +56,7 @@ h1{
     @extend %comun-nav;
 
 }
-@media (max-width:700px) {
+@media (max-width:800px) {
     nav, header{
         display: none;
     }
@@ -180,7 +180,7 @@ footer{
     vertical-align: middle;
 }
 
-@media (max-width:600px) {
+@media (max-width:800px) {
     .footer-politicas{
         font-size: 20px;
         font-size: medium;
